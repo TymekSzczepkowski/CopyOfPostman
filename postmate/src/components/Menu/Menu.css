@@ -1,0 +1,226 @@
+.div {
+  height: 100vh;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*NAVLINKS AND LOGO SECTION*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  background: #ffffff;
+  z-index: 100;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 15px rgba(0 0 0 / 8%);
+}
+.sidebar.close {
+  width: 78px;
+  opacity: 1 !important;
+}
+.sidebar .logo-details {
+  background-color: #fafafb;
+  margin-top: 1.5px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0 0 0 / 8%);
+  background-color: #fafafb;
+}
+.sidebar .logo-details i {
+  font-size: 40px;
+  height: 50px;
+  color: #349eff;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+}
+/*LOGO ANIMATION*/
+@keyframes fly {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.5) translate(100vw, -100vh);
+  }
+}
+
+.sidebar .logo-details i:hover {
+  transition:all 0.3s;
+  animation-name: fly;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.sidebar .logo-details .logo_name {
+  font-size: 30px;
+  color: #455560;
+  font-weight: 600;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+  text-decoration: none;
+  /* transition:all 0.3s */
+}
+.sidebar .logo-details .logo_name:hover {
+  text-decoration: none;
+  color: #3093f0;
+}
+
+.sidebar.close .logo-details .logo_name {
+  transition-delay: 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .navLinks {
+  height: 100%;
+  padding: 30px 0 150px 0;
+  overflow: auto;
+}
+
+.sidebar .navLinks li {
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar .navLinks li:hover {
+  margin: 0 0px 0 22px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #3093f0;
+}
+
+.sidebar.close .navLinks li:hover {
+  margin: 0 0px 0 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.sidebar .navLinks li i {
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  color: #455560;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar .navLinks li:hover i,
+.sidebar .navLinks li:hover a span {
+  color: #ffffff;
+}
+
+.sidebar .navLinks li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sidebar .navLinks li a .link-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #455560;
+  transition: all 0.4s ease;
+}
+.sidebar.close .navLinks li a .link-name {
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .navLinks li a i {
+  font-size: 25px;
+}
+
+/*AUTHLINKS SECTION*/
+.sidebar .authLinks {
+  background-color: #fafafb;
+  box-shadow: 0 0 10px rgba(0 0 0 / 8%);
+  position: fixed;
+  bottom: 0;
+  width: 260px;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+  font-weight: 500;
+
+  overflow: hidden;
+}
+
+.sidebar.close .authLinks {
+  font-weight: 500;
+  width: 78px;
+}
+.sidebar .authLinks li a {
+  color: #455560;
+  font-size: 18px;
+}
+
+.sidebar .authLinks li:hover a {
+  color: white;
+}
+
+/*DASHBOARD SECTION*/
+.home-section {
+  position: relative;
+  background: #fafafb;
+  height: 100vh;
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+}
+
+.sidebar.close ~ .home-section {
+  left: 78px;
+  width: calc(100% - 78px);
+}
+
+.home-section .home-content {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #fafafb;
+}
+
+.home-section .home-content .bx-menu,
+.home-section .home-content .text {
+  color: #455560;
+  font-size: 26px;
+}
+
+.home-section .home-content .bx-menu {
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.home-section .home-content .bx-menu:hover {
+  color: #3093f0;
+}
+
+.home-section .home-content .text {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+@media (max-width: 420px) {
+  .sidebar.close .navLinks li .sub-menu {
+    display: none;
+  }
+}

@@ -1,0 +1,44 @@
+.authContainer {
+  /* height: 100vh; */
+  margin: 0;
+  display: flex;
+  /* background-color: #fafafb; */
+}
+.tableContainer {
+    text-align: center;
+    margin-left: 50px;
+  width: 90%;
+  max-width: 100%;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0 0 0 / 8%);
+  background-color: #ffffff;
+  border-radius: 25px;
+  border-style: none;
+  margin-top: 10px;
+}
+.table {
+    justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.tr {
+  color: #3093f0;
+}
+.td {
+  color: #455560;
+}
+.button {
+    width: 100%;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+    text-align: center;
+    color: rgba(255, 255, 255);
+    background-color: #349eff;
+    transition: all 0.3s;
+  }

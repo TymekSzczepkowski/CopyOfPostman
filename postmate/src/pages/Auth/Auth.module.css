@@ -1,0 +1,127 @@
+.authContainer {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #fafafb; */
+}
+.formContainer {
+  width: 450px;
+  max-width: 450px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0 0 0 / 8%);
+  background-color: #ffffff;
+  border-radius: 25px;
+  border-style: none;
+}
+.formHeader {
+  font-size: 30px;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #455560;
+  transition: color 0.3s;
+}
+.formHeader:hover {
+  color: #349eff;
+}
+.formGroup {
+  margin-bottom: 20px;
+}
+.inputs {
+  background-color: #fafafb;
+  transition: 0.2s;
+  display: block;
+  width: 100%;
+  height: 2.6rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgba(221, 221, 221, 0.3);
+  outline: none;
+  transition: all 0.3s;
+}
+::placeholder {
+  font-size: 16px;
+  color: #455560;
+}
+.inputs:focus {
+  border: 2px solid #349eff;
+  background: #ffffff;
+}
+.buttons {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1rem;
+  text-align: center;
+  color: rgba(255, 255, 255);
+  background-color: #349eff;
+  transition: all 0.3s;
+}
+.buttons:hover {
+  background-color: #3095f2;
+}
+.buttons:active {
+  transform: scale(0.98);
+}
+
+.buttons:focus {
+  outline: none;
+}
+
+.alert {
+  margin-bottom: 0;
+  color: #cc3333;
+  text-align: center;
+  height: 28px;
+  margin-top: 10px;
+}
+
+.success {
+  text-align: center;
+  transition: color 0.3s;
+}
+.success p {
+  color: #455560;
+}
+.success h2 {
+  color: #349eff;
+  font-size: 23px;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+.success h2:hover {
+  color: #455560;
+}
+.bottomInfo {
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.bottomInfo a {
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s;
+  color: #455560;
+}
+.bottomInfo :hover {
+  text-decoration: underline;
+  color: #3093f0;
+}
+.text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.ifSentInfo {
+  color: #3093f0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s;
+}

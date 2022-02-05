@@ -1,0 +1,45 @@
+.Container {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafb;
+}
+.profileContainer {
+  margin-bottom: 6.5rem;
+  width: 450px;
+  max-width: 450px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0 0 0 / 8%);
+  background-color: #ffffff;
+  border-radius: 25px;
+  border-style: none;
+  text-align: center;
+  word-wrap: break-word;
+  float: left;
+  margin-left: 1.2rem;
+}
+.profileHeader {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  text-align: center;
+  transition: color 0.3s;
+}
+.profileHeader:hover {
+  color: #455560 ;
+
+}
+.profileContainer div p {
+  color: #455560;
+}
+.profileContainer div {
+  color: #349eff;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.profileContainer div p {
+  font-weight: 500;
+  font-size: 20px;
+}
